@@ -4,37 +4,87 @@
 <meta charset="UTF-8" />
 <title>SMAP 有名曲まとめ</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP&display=swap');
+
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f5f7fa;
+    color: #333;
     max-width: 900px;
-    margin: 20px auto;
-    padding: 10px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
   }
+
   h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
     text-align: center;
-    margin-bottom: 1em;
+    color: #222;
+    margin-bottom: 1.5em;
+    letter-spacing: 0.05em;
   }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .video-section {
-    margin-bottom: 2em;
+    margin-bottom: 2.8em;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
   }
+
+  .video-section:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
   .video-title {
-    font-weight: bold;
-    margin-bottom: 0.3em;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.03em;
+    user-select: none;
   }
+
   iframe {
     width: 100%;
-    max-width: 560px;
-    height: 315px;
+    height: 320px;
     border: none;
     display: block;
-    margin-bottom: 0.8em;
   }
+
   /* メンバーカラー背景 */
-  .pink { background-color: #ffb6c1; padding: 0.8em; border-radius: 6px; }
-  .blue { background-color: #87cefa; padding: 0.8em; border-radius: 6px; }
-  .green { background-color: #90ee90; padding: 0.8em; border-radius: 6px; }
-  .red { background-color: #f08080; padding: 0.8em; border-radius: 6px; }
-  .yellow { background-color: #fffacd; padding: 0.8em; border-radius: 6px; }
+  .pink { background-color: #ff7fae; }
+  .blue { background-color: #4a90e2; }
+  .green { background-color: #4caf50; }
+  .red { background-color: #f44336; }
+  .yellow { background-color: #f9d71c; color: #222; }
+
+  /* スマホ対応 */
+  @media (max-width: 600px) {
+    iframe {
+      height: 200px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.2em;
+    }
+    .video-title {
+      font-size: 1rem;
+      padding: 12px 16px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -43,129 +93,100 @@
 <p>このページはYouTubeにあるSMAPの有名曲をまとめたものです。公式ではないため、動画の一部が欠ける可能性があります。</p>
 
 <div class="video-section pink">
-  <div class="video-title">1994 ピンク - がんばりましょう</div>
+  <div class="video-title">1994 がんばりましょう</div>
   <iframe src="https://www.youtube.com/embed/zQbf5_HLs1Q" allowfullscreen></iframe>
 </div>
 
 <div class="video-section pink">
-  <div class="video-title">1994 ピンク - オリジナルスマイル</div>
+  <div class="video-title">1994 オリジナルスマイル</div>
   <iframe src="https://www.youtube.com/embed/rJmeYvMaYlg" allowfullscreen></iframe>
 </div>
 
 <div class="video-section pink">
-  <div class="video-title">1995 ピンク - どんないいこと</div>
+  <div class="video-title">1995 どんないいこと</div>
   <iframe src="https://www.youtube.com/embed/KMiNr3hruBc" allowfullscreen></iframe>
 </div>
 
 <div class="video-section blue">
-  <div class="video-title">1996 青 - 青いイナズマ</div>
+  <div class="video-title">1996 青いイナズマ</div>
   <iframe src="https://www.youtube.com/embed/e6IYKHbRPWE" allowfullscreen></iframe>
 </div>
 
 <div class="video-section blue">
-  <div class="video-title">1996 青 - SMAP shake</div>
+  <div class="video-title">1996 SHAKE</div>
   <iframe src="https://www.youtube.com/embed/ZTErKwXOLPE" allowfullscreen></iframe>
 </div>
 
 <div class="video-section green">
-  <div class="video-title">1997 緑 - ダイナマイト</div>
+  <div class="video-title">1997 ダイナマイト</div>
   <iframe src="https://www.youtube.com/embed/W1Ggp8-5T8E" allowfullscreen></iframe>
 </div>
 
 <div class="video-section blue">
-  <div class="video-title">1998 青 - 夜空ノムコウ</div>
+  <div class="video-title">1998 夜空ノムコウ</div>
   <iframe src="https://www.youtube.com/embed/IJl9vIEteEo" allowfullscreen></iframe>
 </div>
 
 <div class="video-section red">
-  <div class="video-title">2000 赤 - らいおんハート</div>
+  <div class="video-title">2000 らいおんハート</div>
   <iframe src="https://www.youtube.com/embed/9lYz02xfp38" allowfullscreen></iframe>
 </div>
 
 <div class="video-section red">
-  <div class="video-title">2000 赤 - オレンジ</div>
+  <div class="video-title">2000 オレンジ</div>
   <iframe src="https://www.youtube.com/embed/4_vJt5GZRr8" allowfullscreen></iframe>
 </div>
 
 <div class="video-section yellow">
-  <div class="video-title">2003 黄色 - 世界に一つだけの花</div>
+  <div class="video-title">2003 世界に一つだけの花</div>
   <iframe src="https://www.youtube.com/embed/n69cLnXHas4" allowfullscreen></iframe>
 </div>
 
 <div class="video-section green">
-  <div class="video-title">2005 緑 - バンバンバカンス</div>
+  <div class="video-title">2005 BANG! BANG! バカンス!</div>
   <iframe src="https://www.youtube.com/embed/EiQXYSpjlHE" allowfullscreen></iframe>
 </div>
 
 <div class="video-section yellow">
-  <div class="video-title">2005 黄色 - Triangle</div>
+  <div class="video-title">2005 Triangle</div>
   <iframe src="https://www.youtube.com/embed/QzeVbh5Bg1o" allowfullscreen></iframe>
 </div>
 
 <div class="video-section red">
-  <div class="video-title">2006 赤 - Dear WOMAN</div>
+  <div class="video-title">2006 Dear WOMAN</div>
   <iframe src="https://www.youtube.com/embed/BAaYiPYQ9NY" allowfullscreen></iframe>
 </div>
 
 <div class="video-section yellow">
-  <div class="video-title">2006 黄色 - ありがとう</div>
+  <div class="video-title">2006 ありがとう</div>
   <iframe src="https://www.youtube.com/embed/iCDrseEV9sA" allowfullscreen></iframe>
 </div>
 
-<div class="video-section pink">
-  <div class="video-title">2006 ピンク - STAY</div>
-  <iframe src="https://www.youtube.com/embed/uJEzjwdkbIo" allowfullscreen></iframe>
-</div>
-
 <div class="video-section blue">
-  <div class="video-title">2008 青 - この瞬間、きっと夢じゃない</div>
+  <div class="video-title">2008 この瞬間、きっと夢じゃない</div>
   <iframe src="https://www.youtube.com/embed/JondOqFbufE" allowfullscreen></iframe>
 </div>
 
-<div class="video-section pink">
-  <div class="video-title">2008 ピンク - はじまりのうた</div>
-  <iframe src="https://www.youtube.com/embed/mrYLodPvQZo" allowfullscreen></iframe>
-</div>
-
 <div class="video-section red">
-  <div class="video-title">2010 赤 - This is love</div>
+  <div class="video-title">2010 This is love</div>
   <iframe src="https://www.youtube.com/embed/gQHe3tW25Tc" allowfullscreen></iframe>
 </div>
 
 <div class="video-section green">
-  <div class="video-title">2011 緑 - not alone ～幸せになろうよ～</div>
+  <div class="video-title">2011 not alone ～幸せになろうよ～</div>
   <iframe src="https://www.youtube.com/embed/E5PRu0oAOz0" allowfullscreen></iframe>
 </div>
 
 <div class="video-section blue">
-  <div class="video-title">2013 青 - Battery</div>
+  <div class="video-title">2013 Battery</div>
   <iframe src="https://www.youtube.com/embed/kbcKQaYMgOM" allowfullscreen></iframe>
 </div>
 
 <div class="video-section green">
-  <div class="video-title">2013 緑 - Joy!!</div>
+  <div class="video-title">2013 Joy!!</div>
   <iframe src="https://www.youtube.com/embed/cPYfDBcMaJ4" allowfullscreen></iframe>
 </div>
 
-<div class="video-section yellow">
-  <div class="video-title">2013 黄色 - シャレオツ</div>
-  <iframe src="https://www.youtube.com/embed/SEePyyFzGFk" allowfullscreen></iframe>
-</div>
-
-<div class="video-section green">
-  <div class="video-title">2017 緑 - 72（新しい地図）</div>
-  <iframe src="https://www.youtube.com/embed/apy2drVSDng" allowfullscreen></iframe>
-</div>
-
-<div class="video-section blue">
-  <div class="video-title">2018 青 - 雨あがりのステップ（新しい地図）</div>
-  <iframe src="https://www.youtube.com/embed/cmTd8rDVtAY" allowfullscreen></iframe>
-</div>
-
-<div class="video-section yellow">
-  <div class="video-title">2019 黄色 - 星のファンファーレ（新しい地図）</div>
-  <iframe src="https://www.youtube.com/embed/DSjdu4XMxFo" allowfullscreen></iframe>
-</div>
 <!-- admax -->
 <script src="https://adm.shinobi.jp/s/b2d6e3ff6668f1e2d424432c1eeb6a0d"></script>
 <!-- admax -->

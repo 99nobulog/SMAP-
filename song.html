@@ -70,6 +70,24 @@
   .red { background-color: #f44336; }
   .yellow { background-color: #f9d71c; color: #222; }
 
+  .more-button {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   @media (max-width: 600px) {
     iframe {
       height: auto;
@@ -88,8 +106,9 @@
 <body>
 
 <h1>SMAPの有名曲まとめ</h1>
-<p>このページはYouTubeにあるSMAPの有名曲をまとめたものです。公式ではないため、動画の一部が欠ける可能性があります。</p>
+<p>このページはYouTubeやbilibiliにあるSMAPの有名曲やライブ映像をまとめたものです。</p>
 
+<!-- 最初に表示する3曲 -->
 <div class="video-section yellow">
   <div class="video-title">2003 世界に一つだけの花</div>
   <iframe src="https://www.youtube.com/embed/n69cLnXHas4" allowfullscreen></iframe>
@@ -104,6 +123,30 @@
   <div class="video-title">2000 らいおんハート</div>
   <iframe src="https://www.youtube.com/embed/9lYz02xfp38" allowfullscreen></iframe>
 </div>
+
+<!-- ライブ映像 -->
+<div class="video-section green">
+  <div class="video-title">Mr.S 2014（ライブ映像）</div>
+  <iframe src="https://player.bilibili.com/player.html?bvid=R6uFOoE&high_quality=1" allowfullscreen></iframe>
+</div>
+
+<div class="video-section green">
+  <div class="video-title">GIFT of SMAP 2012（ライブ映像）</div>
+  <iframe src="https://player.bilibili.com/player.html?bvid=ZG5NoEn&high_quality=1" allowfullscreen></iframe>
+</div>
+
+<div class="video-section green">
+  <div class="video-title">We are SMAP! 2010（ライブ映像）</div>
+  <iframe src="https://player.bilibili.com/player.html?bvid=A9tviFb&high_quality=1" allowfullscreen></iframe>
+</div>
+
+<!-- もっと表示ボタン -->
+<button class="more-button" onclick="document.getElementById('more-songs').classList.remove('hidden'); this.style.display='none';">
+  もっと表示
+</button>
+
+<!-- 隠してある曲 -->
+<div id="more-songs" class="hidden">
 
 <div class="video-section red">
   <div class="video-title">2000 オレンジ</div>
@@ -158,6 +201,8 @@
 <div class="video-section green">
   <div class="video-title">2011 not alone ～幸せになろうよ～</div>
   <iframe src="https://www.youtube.com/embed/E5PRu0oAOz0" allowfullscreen></iframe>
+</div>
+
 </div>
 
 <!-- admax -->
